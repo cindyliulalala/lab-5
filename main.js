@@ -1,4 +1,4 @@
-function addNewList() {
+function addListItem() {
     alert('hello world alert!');
     console.log('hello world console');
     let list = document.getElementById("grocery-list");
@@ -8,11 +8,11 @@ function addNewList() {
     list.appendChild(newItem);
 }
 
-function deleteListItem() {
+function deleteListItem(item) {
     item.parentNode.removeChild(item);
 }
 
-function completeListItem() {
+function completeListItem(item) {
     if (item.checked) {
         item.parentNode.style.textDecoration = "line-through";
     } else {
